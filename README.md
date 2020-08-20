@@ -22,6 +22,9 @@ This little documentation was written using only the browser DevTools as a base,
 - [Get works of a user](#4-get-works-of-a-user)
 - [Get work threads](#5-get-work-threads)
 - [Get work data](#6-get-work-data)
+- [Search users by name](#7-search-users-by-name)
+- [Search works by title](#8-search-works-by-title)
+- [Search works by tag](#9-search-works-by-tag)
 
 
 ### 1. Setup
@@ -45,6 +48,8 @@ img {
 ### 2. Get trending arts
 - Endpoint: `/works/trend`
 - Method: `GET`
+- Params:
+  - none
 - Available query params:
   - `max_id`:
     - description: return a list of works after the work passed on this param
@@ -66,6 +71,8 @@ img {
 ### 3. Get recent arts
 - Endpoint: `/v2/works`
 - Method: `GET`
+- Params:
+  - none
 - Available query params:
   - `max_id`:
     - description: return a list of works after the work passed on this param
@@ -155,3 +162,33 @@ img {
   }
 }
 ```
+
+### 7. Search users by name
+- Endpoint: `/users/search_name     ?name=fu&=6`
+- Method: `GET`
+- Params:
+  - none
+- Available query params:
+  - `name`:
+    - description: The text that will be used to search a user by name
+    - usage: here you put your typed string to search a user by name
+    - value: any **encoded** URL String
+  - `work_count`:
+    - description: The limit of results
+    - usage: here you set the results length limit
+    - value: any int
+  - `max_id`:
+    - description: return a list of users after the users passed on this param
+    - usage: use this param to build a pagination system
+    - value: any user ID
+- Response:
+```js
+{
+  "data": {
+    "user_summaries": UserSummary[],
+    "next_url": string
+  }
+}
+```
+- Note:
+  - The field `next_url` can be empty, that means, can be as empty string if the search have no more results
