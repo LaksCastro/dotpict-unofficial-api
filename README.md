@@ -133,4 +133,4 @@ img {
 }
 ```
 - Note:
-  - The field `next_url` can be empty, that means, can be as empty string if the user not have more works
+  - The field `next_url` can be empty, that means, can be as empty string if the work have no more threads
