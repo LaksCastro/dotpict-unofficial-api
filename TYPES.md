@@ -21,12 +21,13 @@ interface User {
   is_verified: boolean;
 }
 ```
+<br>
       </div>
     </li>
     <li>
       <div>
         <p>Example</p>
-        
+
 ```ts
 const user : User = {
   id: 453197;
@@ -43,6 +44,7 @@ const user : User = {
   is_verified: true;
 }
 ```
+<br>
       </div>
     </li>
   </ul>
@@ -63,6 +65,7 @@ interface ColorCode {
   alpha: number;
 }
 ```
+<br>
       </div>
     </li>
     <li>
@@ -77,6 +80,7 @@ const colorCode : ColorCode {
   alpha: 255;
 }
 ```
+<br>
       </div>
     </li>
   </ul>
