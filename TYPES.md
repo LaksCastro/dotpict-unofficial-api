@@ -233,3 +233,79 @@ const colorCode : ColorCode = {
     </li>
   </ul>
 </details>
+
+<details>
+  <summary>UserRelationship</summary>
+  <br>
+  <ul>
+    <li>
+      <div>
+        <p>Interface</p>
+
+```ts
+interface UserRelationship {
+  requested_user_id: number;
+  target_user_id: number;
+  is_blocked: boolean;
+  is_muted: boolean;
+}
+```
+
+<br>
+      </div>
+    </li>
+    <li>
+      <div>
+        <p>Example</p>
+        
+```ts
+const userRelationship: UserRelationship = {
+  requested_user_id: 0,
+  target_user_id: 453197,
+  is_blocked: false,
+  is_muted: false,
+};
+```
+<br>
+      </div>
+    </li>
+  </ul>
+</details>
+
+<details>
+  <summary>ColorCode</summary>
+  <br>
+  <ul>
+    <li>
+      <div>
+        <p>Interface</p>
+
+```ts
+interface ColorCode {
+  red: number;
+  green: number;
+  blue: number;
+  alpha: number;
+}
+```
+
+<br>
+      </div>
+    </li>
+    <li>
+      <div>
+        <p>Example</p>
+        
+```ts
+const colorCode : ColorCode = {
+  red: 209,
+  green: 133,
+  blue: 196,
+  alpha: 255,
+}
+```
+<br>
+      </div>
+    </li>
+  </ul>
+</details>
