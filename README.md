@@ -39,3 +39,24 @@ img {
   image-rendering: pixelated;
 }
 ```
+
+#### 2. Get trending arts
+- Endpoint: `/works/trend`
+- Method: `GET`
+- Available query params:
+  - max_id:
+    - description: return a list of works after the work passed on this param
+    - usage: use this param to build a pagination system
+    - value: any work ID
+- Return:
+```json
+{
+  "data": {
+    "works": Work[],
+    "next_url": string,
+    "ranking": {
+      "ranking_works": RankedWork[]
+    }
+  }
+}
+```
