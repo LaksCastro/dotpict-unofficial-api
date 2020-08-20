@@ -35,7 +35,7 @@ const user : User = {
 }
 ```
 
-### Color Code Resource
+- ### Color Code Resource
 - Interface
 ```ts
 interface ColorCode {
