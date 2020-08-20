@@ -164,7 +164,7 @@ img {
 ```
 
 ### 7. Search users by name
-- Endpoint: `/users/search_name     ?name=fu&=6`
+- Endpoint: `/users/search_name`
 - Method: `GET`
 - Params:
   - none
